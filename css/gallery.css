@@ -1,0 +1,212 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+background-image: url(../images/gallery/gallery.jpg);
+background-repeat: no-repeat;
+background-size:cover;
+
+
+}
+
+.menu {
+ color: red;
+  padding: 20px; 
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+}
+
+
+
+.menu li a {
+  text-decoration: none;
+  color:white;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  position: relative;
+  left: 350px;
+  top: 15PX;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.menu li a i {
+  margin-right: 8px;
+  
+}
+
+
+.menu li a:hover {
+    border: 2px solid transparent;
+    background-color: white ;
+    padding: 5px;
+    color: black;
+    width: 50px;
+    text-align: center;
+    border-radius: 15px;
+
+}
+.logo,.logo{
+width: 100px;
+height: 100px;
+position: relative;
+bottom: 25px;
+left: -5px;
+}
+
+.gallery {
+  text-align: center;
+  padding: 0px 20px;
+  position: relative;
+ top: 10px;
+}
+
+.h1{
+  
+  color: rgb(236, 236, 67);
+ position: relative;
+ bottom: 10px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ letter-spacing: 3px;
+ text-shadow: 1px 1px red;
+  text-align: center;
+  left: 10px;
+  bottom: 60px;
+}
+
+.thumbs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  position: relative;
+  bottom:50px ;
+}
+
+.gall {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 3px solid #ddd;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.gall:hover {
+  transform: scale(1.05);
+  border-color: #555;
+}
+
+/* Lightbox container */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.85);
+  text-align: center;
+}
+
+.lightbox:target {
+  display: block;
+}
+
+/* Lightbox image */
+.lightbox img {
+  max-width: 90%;
+  max-height: 80vh;
+  margin-top: 5%;
+  border: 5px solid #fff;
+  box-shadow: 0 0 20px #000;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 40px;
+  right: 90px;
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.close:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Navigation arrows */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.nav:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.prev {
+  left: 30px;
+}
+
+.next {
+  right: 100px;
+}
+
+
+.footer {
+background-color: white;
+  color: black;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 100px;
+  
+
+ 
+}
+
+
+.footer .social-media a {
+  margin: 0 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.footer .social-media a:hover {
+  color: black;
+}
+
+.footer .opening-hours h4 {
+  margin: 10px 0 5px;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: black;
+}
